@@ -13,7 +13,6 @@ const handleClick = (event) => {
 };
 
 const handleInput = (event) => {
-  clearCountryContainer();
   const searchQuery = event.target.value.trim();
   getCountryInfo(searchQuery);
   refs.countryContainerList.addEventListener("click", handleClick);
