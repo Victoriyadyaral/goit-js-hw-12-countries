@@ -1,0 +1,28 @@
+<li class="one-country__item">
+<h1 class="one-country__title"> {{name}}</h1>
+<div class="one-country__wrap">
+    <ul>
+        <li class="one-country-list__item">
+            <p class="capital">
+                <span class="text">Capital: </span>
+                {{capital}}
+            </p>
+        </li>
+        <li class="one-country-list__item">
+            <p class="population">
+                <span class="text">Population: </span>
+                {{population}}
+            </p>
+        </li>
+        <li class="one-country-list__item">
+            <ul class="languages">
+                <span class="text">Languages:</span>
+                {{#each languages}}
+               <li class="languages-list__item">{{name}}</li>
+                {{/each}}
+            </ul>
+        </li>
+    </ul>
+    <img src="{{flag}}" alt="flag of country" class="flag" />
+</div>
+</li>

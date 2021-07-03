@@ -1,0 +1,24 @@
+.search-country__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.search-country__item {
+  text-align: left;
+}
+
+.search-country__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.search-country__item:hover {
+  color: #0920f5;
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEARCH THE CONTRY</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+<section>
+    <h1 class="page__title">Search the country</h1>
+    <p class="page__text">Do you want to find information about the country? It's easy!!!</p>
+<form class="search__form js-search-form">
+  <div class="form-container">
+    <label class="page__text" for="searchQuery">Please, enter the country!</label>
+    <input type="text" class="form__control" name="query" id="searchQuery"  autocomplete="off" />
+  </div>
+  </form>
+
+
+  <ul class = "search-country__list"></ul>
+
+</section>
+  <script src="./index.js"></script>
+  </body>
+</html>

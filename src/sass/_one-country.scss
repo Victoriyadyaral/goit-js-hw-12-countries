@@ -1,0 +1,34 @@
+.one-country__wrap {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  padding: 20px;
+}
+
+.one-country__title {
+  text-align: center;
+}
+
+.flag {
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+.one-country-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.text {
+  font-weight: 700;
+}
+
+.languages {
+  list-style: disc;
+  list-style-position: inside;
+  padding: 0, 20px;
+}
+
+.languages-list__item {
+  line-height: 1.5;
+}
