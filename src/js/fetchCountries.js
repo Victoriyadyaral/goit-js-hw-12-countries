@@ -10,13 +10,13 @@ import { alert } from '@pnotify/core';
 
 const BASE_URL = 'https://restcountries.eu/rest/v2/name';
 
-const  fetchCountries = (searchQuery) => {
-    const url = `${BASE_URL}/${searchQuery}`;
+const fetchCountries = (searchQuery) => {
+  const url = `${BASE_URL}/${searchQuery}`;
 
   return fetch(url).then(response => response.json());
 }
-export default function getCountryInfo (searchQuery) {  
-     fetchCountries(searchQuery)
+export default function getCountryInfo(searchQuery) {
+  fetchCountries(searchQuery)
     .then(data => {
       if (data.length > 10) {
         alert({
@@ -31,7 +31,6 @@ export default function getCountryInfo (searchQuery) {
         refs.input.value = '';
       } else if (data.length <= 10) {
         buildListMarkup(data, countriseListTpl);
-        refs.input.value = '';
         alert({
           title: "Found more than one country",
           text: "Choose country you are searching for!",
@@ -53,8 +52,8 @@ export default function getCountryInfo (searchQuery) {
       alert({
         title: "Error",
         text: "Please, try again!",
-         type: 'error',
-          delay: 3000,
+        type: 'error',
+        delay: 3000,
         hide: true,
       });
     });
@@ -63,4 +62,4 @@ export default function getCountryInfo (searchQuery) {
 function buildListMarkup(countries, template) {
   const markup = countries.map(country => template(country)).join('');
   refs.countryContainerList.insertAdjacentHTML('beforeend', markup)
-  };
+};
